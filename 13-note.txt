@@ -1,0 +1,66 @@
+
+
+def func(v):
+i = v * 3
+return i
+
+import importlib
+importlib.reload(my_module)
+
+
+
+import random
+
+r = 100
+turtle.home()
+turtle.clear()
+turtle.penup()
+turtle.forward(r)
+turtle.left(90)
+turtle.pendown()
+turtle.circle(r)
+turtle.penup()
+turtle.home()
+turtle.pendown()
+while True:
+  turtle.left(random.randint(1,360))
+  turtle.forward(15)
+  if turtle.distance(0, 0) > r:
+     turtle.undo()
+
+
+
+import turtle
+turtle = turtle.Turtle()
+
+def center_circle():
+  turtle.penup()
+  turtle.forward(200)
+  turtle.left(90)
+  turtle.pendown()
+  turtle.circle(200)
+  turtle.left(90)
+  turtle.penup()
+  turtle.forward(200)
+  turtle.pendown()
+
+円を描く
+
+import turtle
+turtle = turtle.Turtle()
+def center_circle(target):
+  target.penup()
+  target.forward(200)
+  target.left(90)
+  target.pendown()
+  target.circle(200)
+  target.left(90)
+  target.penup()
+  target.forward(200)
+  target.pendown()
+  
+  
+  
+def f(x):
+  return x * 2
+list(map(f, [1, 2, 3, 4, 5]))
